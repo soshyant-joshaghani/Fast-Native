@@ -1,0 +1,57 @@
+{
+  "kits": [
+    {
+      "id": "svelte",
+      "label": "Fast-Svelte",
+      "repo": "https://github.com/soshyant-joshaghani/Fast-Svelte.git",
+      "github": "soshyant-joshaghani/Fast-Svelte",
+      "archive_root": "Fast-Svelte",
+      "branch": "main",
+      "runtime": "node",
+      "dev": ["npm", "run", "dev", "-w", "frontend"],
+      "cwd": ".",
+      "npm_prepare": ["run", "prepare", "-w", "frontend"],
+      "scaffold": "svelte"
+    },
+    {
+      "id": "next",
+      "label": "Fast-Next",
+      "repo": "https://github.com/soshyant-joshaghani/Fast-Next.git",
+      "github": "soshyant-joshaghani/Fast-Next",
+      "archive_root": "Fast-Next",
+      "branch": "main",
+      "runtime": "node",
+      "dev": ["npm", "run", "dev", "-w", "frontend"],
+      "cwd": ".",
+      "npm_prepare": ["run", "prepare", "-w", "frontend"],
+      "scaffold": "next"
+    },
+    {
+      "id": "nuxt",
+      "label": "Fast-Nuxt",
+      "repo": "https://github.com/soshyant-joshaghani/Fast-Nuxt.git",
+      "github": "soshyant-joshaghani/Fast-Nuxt",
+      "archive_root": "Fast-Nuxt",
+      "branch": "main",
+      "runtime": "node",
+      "dev": ["npm", "run", "dev"],
+      "cwd": "frontend/web",
+      "npm_prepare": ["run", "postinstall"],
+      "npm_prepare_cwd": "frontend/web",
+      "scaffold": "nuxt"
+    },
+    {
+      "id": "rio",
+      "label": "Fast-Rio",
+      "repo": "https://github.com/soshyant-joshaghani/Fast-Rio.git",
+      "github": "soshyant-joshaghani/Fast-Rio",
+      "archive_root": "Fast-Rio",
+      "branch": "main",
+      "runtime": "python",
+      "dev": ["{python}", "-m", "rio", "run", "--port", "5000", "--public"],
+      "cwd": "frontend/web",
+      "pip_extra": "rio-ui[window]>=0.12.3,<1.0.0",
+      "scaffold": "rio"
+    }
+  ]
+}
