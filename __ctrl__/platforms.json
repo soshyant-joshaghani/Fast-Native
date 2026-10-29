@@ -1,0 +1,39 @@
+{
+  "platforms": [
+    {
+      "id": "android",
+      "label": "Android",
+      "path": "../frontend/android",
+      "status": "ready",
+      "package": "fastnative.client",
+      "activity": "fastnative.client.MainActivity",
+      "variants": {
+        "debug": {
+          "gradle_task": "assembleDebug",
+          "artifact": "app/build/outputs/apk/debug/app-debug.apk"
+        },
+        "release": {
+          "gradle_task": "assembleRelease",
+          "artifact": "app/build/outputs/apk/release/app-release-unsigned.apk"
+        }
+      }
+    },
+    {
+      "id": "win",
+      "label": "Windows",
+      "path": "../frontend/win/FastNative.Client",
+      "status": "ready",
+      "project": "FastNative.Client.csproj",
+      "variants": {
+        "debug": {
+          "configuration": "Debug",
+          "artifact": "bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64/FastNative.Client.exe"
+        },
+        "release": {
+          "configuration": "Release",
+          "artifact": "bin/x64/Release/net8.0-windows10.0.19041.0/win-x64/FastNative.Client.exe"
+        }
+      }
+    }
+  ]
+}
